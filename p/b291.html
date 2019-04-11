@@ -79,12 +79,10 @@
 
 
 
-<meta name="description" content="动机想必众多程序猿/媛，多少都有自己要写技术文章的想法，无论是创作还是技术总结，写博客的确对技术人员来说有众多好处。当然，现在都9102年了，早已有许多支持个人创作的平台，最终对比了简书、掘金、CSDN、wordpress，(当然这几种都实操过了)，还是Hexo配合GitPage的方式成功胜出：markdown语法编辑文章、可自定漂亮博客主题、部署难度低，这几点对我来说都有足够的吸引力。下面就记录">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo + GitPage 搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/p/b291.html">
 <meta property="og:site_name" content="Mikey&#39;s Blog">
-<meta property="og:description" content="动机想必众多程序猿/媛，多少都有自己要写技术文章的想法，无论是创作还是技术总结，写博客的确对技术人员来说有众多好处。当然，现在都9102年了，早已有许多支持个人创作的平台，最终对比了简书、掘金、CSDN、wordpress，(当然这几种都实操过了)，还是Hexo配合GitPage的方式成功胜出：markdown语法编辑文章、可自定漂亮博客主题、部署难度低，这几点对我来说都有足够的吸引力。下面就记录">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79gy1g1why23d31j30xd0u07wh.jpg">
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79gy1g1wihsyq3cj30jw04ygma.jpg">
@@ -92,10 +90,9 @@
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79gy1g1wj9q8i4gj30t007wdgz.jpg">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1g1wjggrd0oj312p0u0q8f.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79gy1g1wjuduwamj310e0pygnf.jpg">
-<meta property="og:updated_time" content="2019-04-11T08:14:52.997Z">
+<meta property="og:updated_time" content="2019-04-11T08:26:29.234Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo + GitPage 搭建个人博客">
-<meta name="twitter:description" content="动机想必众多程序猿/媛，多少都有自己要写技术文章的想法，无论是创作还是技术总结，写博客的确对技术人员来说有众多好处。当然，现在都9102年了，早已有许多支持个人创作的平台，最终对比了简书、掘金、CSDN、wordpress，(当然这几种都实操过了)，还是Hexo配合GitPage的方式成功胜出：markdown语法编辑文章、可自定漂亮博客主题、部署难度低，这几点对我来说都有足够的吸引力。下面就记录">
 <meta name="twitter:image" content="https://ws3.sinaimg.cn/large/006tNc79gy1g1why23d31j30xd0u07wh.jpg">
 
 
@@ -315,7 +312,8 @@
       
 
       
-        <h2 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h2><p>想必众多程序猿/媛，多少都有自己要写技术文章的想法，无论是创作还是技术总结，写博客的确对技术人员来说有众多好处。当然，现在都9102年了，早已有许多支持个人创作的平台，最终对比了简书、掘金、CSDN、wordpress，(当然这几种都实操过了)，还是Hexo配合GitPage的方式成功胜出：markdown语法编辑文章、可自定漂亮博客主题、部署难度低，这几点对我来说都有足够的吸引力。<br>下面就记录下搭建的过程，相信能帮到同道中人😄</p>
+        <p></p>
+<h2 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h2><p>想必众多程序猿/媛，多少都有自己要写技术文章的想法，无论是创作还是技术总结，写博客的确对技术人员来说有众多好处。当然，现在都9102年了，早已有许多支持个人创作的平台，最终对比了简书、掘金、CSDN、wordpress，(当然这几种都实操过了)，还是Hexo配合GitPage的方式成功胜出：markdown语法编辑文章、可自定漂亮博客主题、部署难度低，这几点对我来说都有足够的吸引力。<br>下面就记录下搭建的过程，相信能帮到同道中人😄</p>
 <h2 id="基础条件"><a href="#基础条件" class="headerlink" title="基础条件"></a>基础条件</h2><p>假设你已经有了以下的基础条件，这会帮助你快速的搭建起博客：</p>
 <ol>
 <li>要有个人网站域名</li>
@@ -360,7 +358,6 @@
 <p>部署完我们就能看到刚刚新建的仓库上已经有代码了，然后去到项目Setting里，打开GitHub Pages，通常是master分支，并且将你自己的域名填进Custom domain里<br><img src="https://ws4.sinaimg.cn/large/006tNc79gy1g1wjggrd0oj312p0u0q8f.jpg" alt="GitHub Pages"><br>在/source目录下，新增一个文件名为CNAME的文件，里面填上你自己的域名，这样能保证GitHub Pages每次更新都从这里读取自定义的域名</p>
 <p>最后一步需要将域名解析到<code>github.io</code>的ip地址上，ping一下github.io，拿到ip:<code>185.199.111.153</code><br><img src="https://ws1.sinaimg.cn/large/006tNc79gy1g1wjuduwamj310e0pygnf.jpg" alt="域名解析"></p>
 <h2 id="完结撒花"><a href="#完结撒花" class="headerlink" title="完结撒花"></a>完结撒花</h2><p>我的域名是<code>mikey.top</code>,直接访问这个地址就可以指向部署好的博客地址，效果非常显著，哈哈😎😎</p>
-
       
     </div>
     
